@@ -1,6 +1,10 @@
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('employee','root','L.0987654321',{
-    host:'127.0.0.1',
+import { Sequelize } from "sequelize"
+import dotenv from 'dotenv'
+dotenv.config()
+
+export const sequelize = new Sequelize(process.env.DB_NAME,'root','L.0987654321',
+{
+    host:process.env.DB_HOST,
     dialect:'mysql',
     define : {
         timestamps:false
@@ -14,7 +18,7 @@ try{
     console.log(`Falha na conecção...${err}`)
 }
 
-const Employees = sequelize.define(
+export const Employees = sequelize.define(
     'employee',
     {
         name:{
@@ -44,10 +48,4 @@ const Employees = sequelize.define(
 
 
 
-
-module.exports = {
-    sequelize,
-    Employees
-
-}
 

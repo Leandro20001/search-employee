@@ -30,7 +30,9 @@ function EmployeePage(){
     <>
     <ReturnButton/>
     <h1>Seus Funcionarios</h1>
+    <button onClick={()=> navigate('/')} className="addEmployee">Adicionar Funcionario</button>
         <div id="showEmployee">
+            
             {
              data?(
                 
@@ -49,7 +51,7 @@ function EmployeePage(){
                     ):(<span>Nenhum usuario</span>)
                 }
             </div>
-            <button onClick={()=> navigate('/')} className="addEmployee">Adicionar Funcionario</button>
+            
         </>
     )
 }

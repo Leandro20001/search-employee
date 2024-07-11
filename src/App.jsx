@@ -40,8 +40,11 @@ function App(){
       console.log('Form Renderizado')
   },[form])
   return(
-    <div id="a">
+    <>
+    <div id="title">
       <img id="logo" src="src/midia/logo.png" alt="" />
+      <span>Employee Manager</span>
+    </div>
 
       <header>
         <nav id="navLinks">
@@ -56,7 +59,7 @@ function App(){
         </nav>
       </header>
       
-     <h1>Adicione Seu Funcionario:</h1>
+     <h1>Adicione Seu Funcionario</h1>
      <div className="eAdd">
       <form action=".">
         <input
@@ -103,7 +106,7 @@ function App(){
      }
      {error == true && created !==true?
      <AddError/>:null}
-    </div>
+    </>
   )
 }
 export default App

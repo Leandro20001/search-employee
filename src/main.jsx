@@ -6,6 +6,7 @@ import './index.css'
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import EditEmployee from './pages/SearchEmployee.jsx'
+import ChatPage from './pages/ChatPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:'/editar',
     element:<EditEmployee/>
+  },
+  {
+    path:'/chat',
+    element:<ChatPage/>
   }
 ])
 
