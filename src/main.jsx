@@ -5,7 +5,7 @@ import EmployeePage from './pages/EmployeePage.jsx'
 import './index.css'
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import EditEmployee from './pages/SearchEmployee.jsx'
+
 import ChatPage from './pages/ChatPage.jsx'
 
 const router = createBrowserRouter([
@@ -16,10 +16,6 @@ const router = createBrowserRouter([
   {
     path:'/',
     element:<App/>
-  },
-  {
-    path:'/editar',
-    element:<EditEmployee/>
   },
   {
     path:'/chat',

@@ -52,10 +52,6 @@ function App(){
           <a
           onClick={()=>navigate('/funcionarios')}
           >Meus Funcionarios</a>
-          <a
-          onClick={()=>navigate('/editar')}
-          >Buscar Funcionarios</a>
-
         </nav>
       </header>
       

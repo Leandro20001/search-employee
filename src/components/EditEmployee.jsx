@@ -1,6 +1,6 @@
 import React from "react"
 
-function EditModal({open,children}){
+function EditEmployee({open,children}){
     if(open)
     return(
         <>
@@ -10,4 +10,4 @@ function EditModal({open,children}){
         </>
     )
 }
-export default EditModal
+export default EditEmployee

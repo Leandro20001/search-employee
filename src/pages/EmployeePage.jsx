@@ -40,6 +40,7 @@ function EmployeePage(){
                 {data.map((employ)=> 
                 <EmployeeInfo
                 key={employ.id}
+                id={employ.id}
                 name={employ.name}
                 salary={employ.salary}
                 role={employ.role}
