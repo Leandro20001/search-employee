@@ -9,14 +9,14 @@ body{
 }
 #title span{
   width: 80%;
-  font-size: 24px;
+  font-size: 32px;
   color: rgb(59, 163, 219);
   font-weight: bold;
   margin: auto auto auto 0;
   display: block;
 }
 #logo{
-  margin: 12px auto auto 24px;
+  margin: 12px 0 auto 24px;
   width: 98px;
   height: 98px;
 }
@@ -137,6 +137,17 @@ select>option{
   margin: 12px auto;
   text-align: center;
   color: rgb(38, 120, 164);
+}
+#deletedSucess{
+  letter-spacing: 1px;
+  font-size: 24px;
+  margin: 12px auto;
+  text-align: center;
+  color: rgb(38, 120, 164);
+}
+
+button img{
+  width: 96%;
 }
 #deleteBtn{
   right: 52px;

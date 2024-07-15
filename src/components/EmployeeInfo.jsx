@@ -16,6 +16,7 @@ function EmployeeInfo({id,name,salary,role,contract}){
 
     })
     const [edited,setEdited] = useState(false)
+    const [deleted,setDeleted] = useState(false)
 
 
     const sendEdit = (async()=>{
@@ -26,7 +27,7 @@ function EmployeeInfo({id,name,salary,role,contract}){
     })
 
     const sendDelete = (async()=>{
-        await axios.delete('http://localhost:3333/excluir%20funcionario/'+edit.id)
+        await axios.delete('http://localhost:3333/excluir%20funcionario/'+edit.id).then(setDeleted(true))
     })
 
     return(
@@ -51,8 +52,11 @@ function EmployeeInfo({id,name,salary,role,contract}){
 
         <EditEmployee open={open}>
         <div id="editModal">
-            <button onClick={sendDelete} id="deleteBtn">/</button>
-        <button onClick={()=>{
+            <button
+            onClick={sendDelete} id="deleteBtn"><img src="../src/midia/trash.webp" alt="" />
+            </button>
+
+            <button onClick={()=>{
                 if(open == true){
                     setOpen(false)
                 }
@@ -87,7 +91,9 @@ function EmployeeInfo({id,name,salary,role,contract}){
                 onClick={sendEdit} 
                 className="editBtn"
                 >Editar</button>
+
                 {edited&& <span id="editSucess" >Editado Com Sucesso!</span>}
+                {deleted&& <span id="deletedSucess">Funcionario Deletado</span>}
             </div>
         </div>
 
