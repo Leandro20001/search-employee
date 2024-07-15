@@ -50,10 +50,10 @@ export async function Edit(req,res){
     }else console.log('sem novo cargo')
 }
 
-export async function Delete(req,res){
-    Employees.destroy({
-        where :{
-            id : req.body.id
-}})
-res.send('usuario deletado')
-}
+//export async function Delete(req,res){
+   // Employees.destroy({
+    //    where :{
+     //       id : req.body.id
+//}})
+//res.send('usuario deletado')
+//}

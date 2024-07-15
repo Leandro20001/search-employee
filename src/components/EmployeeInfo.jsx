@@ -17,17 +17,16 @@ function EmployeeInfo({id,name,salary,role,contract}){
     })
     const [edited,setEdited] = useState(false)
 
-    const [deleteU,setDeleteU] = useState(false)
 
     const sendEdit = (async()=>{
         if(edit.name !=='' || edit.salary !==''|| edit.cargo!==''){
-            await axios.patch('http://localhost:3333/editar',edit.id,{headers:{'Content-Type':'application/json','method':'patch'}}).then(console.log('req')).then(setEdited(true))
+            await axios.patch('http://localhost:3333/editar',edit,{headers:{'Content-Type':'application/json','method':'patch'}}).then(console.log('req')).then(setEdited(true))
 
         }else console.log('no edit')
     })
 
     const sendDelete = (async()=>{
-        await axios.delete('http://localhost:3333/excluir%20funcionario',edit,{headers:{'Content-Type':'application/json','method':'delete'}}).then(console.log('req')).then(setDeleteU(true))
+        await axios.delete('http://localhost:3333/excluir%20funcionario/'+edit.id)
     })
 
     return(

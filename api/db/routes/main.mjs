@@ -7,7 +7,8 @@ const app = express()
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import { Employees } from '../db.mjs'
-import {Post,Get,Delete, Edit} from './controlers/EmployeeController.mjs'
+import {Post,Get, Edit} from './controlers/EmployeeController.mjs'
+//Delete
 
 
 
@@ -18,7 +19,12 @@ app.use(cors())
 app.get('/list',Get)
 app.post('/novo%20funcionario',Post)
 app.patch('/editar',Edit)
-app.delete('/excluir%20funcionario',Delete)
+app.delete('/excluir%20funcionario/:id',(req,res)=>{
+    Employees.destroy({
+        where :{
+            id : req.params.id
+}}) 
+res.send('employee deleted')})
 
 
 
