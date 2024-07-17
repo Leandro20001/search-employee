@@ -10,13 +10,13 @@ body{
 #title span{
   width: 80%;
   font-size: 32px;
-  color: rgb(59, 163, 219);
+  color: rgb(0, 4, 6);
   font-weight: bold;
   margin: auto auto auto 0;
   display: block;
 }
 #logo{
-  margin: 12px 0 auto 24px;
+  margin: 12px 12px auto 24px;
   width: 98px;
   height: 98px;
 }
@@ -26,7 +26,7 @@ h1{
   width: fit-content;
   display: block;
   margin: 12px auto 12px;
-  background-color: rgb(68, 180, 241);
+  background-color: rgb(0, 4, 6);
   color: #ffffff;
   font-family: sans-serif;
   font-size: 3.2em;
@@ -49,19 +49,21 @@ h1{
   margin: 20px auto;
 }
 #navLinks a{
+  padding: 8px;
   cursor: pointer;
   font-weight: bold;
   font-family: sans-serif;
   text-decoration: none;
   font-size: 24px;
-  color: rgb(14, 122, 181);
+  color: white;
+  background-color: rgb(0, 4, 6);
 
 }
 #navLinks a:not(:first-child){
   margin-left: 32px;
 }
 #returnButton{
-  background-color: rgb(57, 151, 201);
+  background-color: rgb(0, 4, 6);
   color: #ffffff;
   width: 84px;
   border: 0px;
@@ -72,7 +74,7 @@ h1{
   transition: 200ms;
 }
 #returnButton:hover{
-  background-color: rgba(57, 151, 201, 0.796);
+  background-color: rgb(0, 4, 6);
 }
 #notData{
   display: block;
@@ -136,14 +138,14 @@ select>option{
   font-size: 24px;
   margin: 12px auto;
   text-align: center;
-  color: rgb(38, 120, 164);
+  color: rgb(0, 4, 6);
 }
 #deletedSucess{
   letter-spacing: 1px;
   font-size: 24px;
   margin: 12px auto;
   text-align: center;
-  color: rgb(38, 120, 164);
+  color: rgb(0, 4, 6);
 }
 
 button img{
@@ -192,7 +194,7 @@ button img{
   margin: 16px auto;
   display: block;
   width: 360px;
-  background-color: rgb(68, 180, 241);
+  background-color: rgb(0, 4, 6);
   border: none;
   height: 60px;
   font-size: 1.4em;
@@ -203,7 +205,7 @@ button img{
   cursor: pointer;
 }
 .addEmployee:hover{
-  background-color: rgb(38, 120, 164);
+  background-color: rgb(56, 59, 61);
 }
 .eAdd{
   padding: 8px;
@@ -223,7 +225,7 @@ button img{
   letter-spacing: 1px;
   cursor: pointer;
   display: block;
-  background-color: rgb(57, 151, 201);
+  background-color: rgb(0, 4, 6);
   color: #ffffff;
   border: none;
   padding: 8px;
@@ -234,12 +236,12 @@ button img{
   transition: 200ms;
 }
 .employOptionsButton:last-child{
-  border: 1px solid rgb(98, 179, 255);
-  color: rgb(57, 151, 201);
-  background-color: rgb(226, 245, 255);
+  background-color: rgb(0, 4, 6);
+  color: rgb(0, 4, 6);
+  background-color: rgb(238, 238, 238);
 }
 .editButton:hover{
-  background-color: rgb(38, 120, 164);
+  background-color: rgb(56, 59, 61);
   
 }
 #editModal{
@@ -261,7 +263,7 @@ button img{
   position: absolute;
   cursor: pointer;
   display: block;
-  background-color: rgb(57, 151, 201);
+  background-color: rgb(0, 4, 6);
   border: none;
   color: #ffffff;
   width: 52px;
@@ -270,12 +272,13 @@ button img{
   transition: 200ms;
 }
 #closeModal:hover{
-  background-color: rgb(38, 120, 164);
+  background-color: rgb(56, 59, 61);
 }
 
 .submitBtn{
+  height: 56px;
   display: block;
-  background-color: rgb(68, 180, 241);
+  background-color: rgb(0, 4, 6);
   transition: 200ms;
   color: #ffffff;
   font-size: 2em;
@@ -283,14 +286,14 @@ button img{
   margin: 24px auto;
   cursor: pointer;
   border: none;
-  font-size:24px;
+  font-size:22px;
   letter-spacing: 2px;
   font-weight: bolder;
   border-radius: 4.4px;
   padding: 4.4px;
 }
 .submitBtn:hover{
-  background-color: rgb(57, 151, 201);
+  background-color: rgb(56, 59, 61);
   transition: 200ms;
 }
 .editBtn{
@@ -298,7 +301,7 @@ button img{
   display: block;
   margin: auto;
   border: none;
-  background-color: rgb(57, 151, 201);
+  background-color: rgb(0, 4, 6);
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -320,12 +323,14 @@ button img{
   display: block;
   margin: 12px auto;
   width: 200px;
+  height: 48px;
+  font-size: 1.2rem;
   padding: 0.4em;
   border-radius: 8px;
 }
 .rodape{
   display: block;
-  background-color: rgb(68, 180, 241);
+  background-color: rgb(0, 4, 6);
   color: #ffffff;
   height: 94px;
   text-align: center;

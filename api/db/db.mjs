@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 
-export const sequelize = new Sequelize(process.env.DB_NAME,'root','L.0987654321',
+export const sequelize = new Sequelize('employee','root','L.0987654321',
 {
     host:'127.0.0.1',
     dialect:'mysql',

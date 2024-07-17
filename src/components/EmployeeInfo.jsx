@@ -53,7 +53,7 @@ function EmployeeInfo({id,name,salary,role,contract}){
         <EditEmployee open={open}>
         <div id="editModal">
             <button
-            onClick={sendDelete} id="deleteBtn"><img src="../src/midia/trash.webp" alt="" />
+            onClick={sendDelete} id="deleteBtn"><img src="../src/midia/trash.png" alt="" />
             </button>
 
             <button onClick={()=>{
