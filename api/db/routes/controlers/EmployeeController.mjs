@@ -8,6 +8,7 @@ export async function Post(req,res){
         {name: req.body.name,
         salary: req.body.salary,
         role: req.body.role,
+        contract:req.body.contract
     }).then
         (console.log('Employee added sucessfully!'))
     

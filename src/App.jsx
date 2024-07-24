@@ -17,17 +17,24 @@ function App(){
     })
   })
 
+  const [createdAt,setCreatedAt] = useState('')
+
   
 
 
   const [form,setForm] = useState({
     name:'',
     salary:0,
-    role:''
+    role:'',
+    contract:createdAt
   })
 
   const sendForm = async (event)=>{
     event.preventDefault()
+    const date  = new Date()
+    const newDate =date.getDate()+'-'+(date.getMonth()+1)+'-'+ date.getFullYear()
+    console.log(newDate)
+    setForm({...form,contract:newDate})
     const send = async()=>{
       await axios.post('http://localhost:3333/novo%20funcionario',form,{headers:{'Content-Type':'application/json','method':'post'}}).then(console.log('req'))
     }
